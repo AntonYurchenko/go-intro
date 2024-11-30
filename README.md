@@ -38,12 +38,12 @@
 Структуру таблицы:
 ```sql
 CREATE TABLE public."data" (
-	id      serial4     NOT NULL,
-	"user"  text        NOT NULL,
-	age     int2        NOT NULL,
-	email   text        NOT NULL,
+    id      serial4     NOT NULL,
+    "user"  text        NOT NULL,
+    age     int2        NOT NULL,
+    email   text        NOT NULL,
 
-	PRIMARY KEY (id)
+    PRIMARY KEY (id)
 )
 ```
 
@@ -63,18 +63,18 @@ docker compose down
 Все команды нужно запускать в директории проекта.
 
 ### Kafka
-Доступна локально: `localhost:9892`
-Доступна из сети docker: `kafka:9092`
-Целевой топик: `data`
-SSL не используется.
+- Доступна локально: `localhost:9892`
+- Доступна из сети docker: `kafka:9092`
+-Целевой топик: `data`
+- SSL не используется.
 
 ### Postgres
-Доступна локально: `localhost:5432`
-Доступна из сети docker: `postgres:5432`
-База данных: `test`
-Пользователь: `postgres`
-Пароль: `pass`
-Целевая таблица: `public.data`
+- Доступна локально: `localhost:5432`
+- Доступна из сети docker: `postgres:5432`
+- База данных: `test`
+- Пользователь: `postgres`
+- Пароль: `pass`
+- Целевая таблица: `public.data`
 
 ## Критерии проверки
 1. Результат выполнения нужно загрузить в публичный репозиторий на github.
